@@ -1,3 +1,7 @@
+name = str(input("What's your name? "))
+print("Welcome to the quiz!"+name)
+print("for every correct answer you get 1 mark and for each wrong answer you get 0 marks")
+
 def quiz_game():
     pass
 
