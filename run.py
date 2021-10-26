@@ -1,11 +1,21 @@
 name = str(input("What's your name? "))
-print("Welcome to the quiz!"+name)
+print("Welcome to the quiz! "+name)
 print("for every correct answer you get 1 mark and for each wrong answer you get 0 marks")
 
 def quiz_game():
-    pass
 
-def check_answer():
+    questions_num = 1
+
+    for key in questions:
+        print("...................")
+        print(key)
+        for x in answers[questions_num-1]:
+            print(x)
+
+        guess = input("Enter a, b, c or d: ")
+        questions_num += 1
+
+def answer():
     pass
 
 def score():
@@ -43,3 +53,5 @@ answers = [["(a)Koala", "(b)Crocodile", "(c)Kangaroo", "(d)Dingo"],
     ["(a)Needle", "(b)Stormbreaker", "(c)The Hammer", "(d)Mjölnir"],
     ["(a)BitCoin", "(b)Ethereum", "(c)Dogecoin", "(d)Litcoin"],
     ["(a)Elephant", "(b)Blue Whale", "(c)Killer Whale", "(d)Giraffe"]]
+
+quiz_game()
