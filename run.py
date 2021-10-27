@@ -16,9 +16,12 @@ def quiz_game():
         questions_num += 1
 
 def check_answer():
-    pass
-def score():
-    pass
+    score = 0
+    if guess == questions(value):
+        print("Correct")
+        score = score +1
+    else:
+        print("Incorrect")
 
 def play_again():
     
