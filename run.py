@@ -1,33 +1,35 @@
-name = str(input("What's your name? "))
+name = input("What's your name? ")
 print("Welcome to the quiz! "+name)
-print("for every correct answer you get 1 mark and for each wrong answer you get 0 marks")
+print("For every correct answer you get 1 mark and for each wrong answer you get 0 marks")
 
 def quiz_game():
 
-    questions_num = 1
-
+    questions_num = 0
+    
     for key in questions:
         print("...................")
         print(key)
-        for x in answers[questions_num-1]:
+        for x in answers[questions_num]:
             print(x)
 
         guess = input("Enter a, b, c or d: ")
         questions_num += 1
 
-def answer():
+def check_answer():
     pass
-
 def score():
     pass
 
 def play_again():
-    pass
+    
+    ending = input("Would you like to play again, Yes or NO: ")
+    if ending == "Yes":
+        return True
+    else:
+        print("Thank you for playing!")
+        return False
+        
 
-
-
-
-#dictionary for the question with key value pairs
 questions = {
     "What is the national animal of Australia?: ": "c",
     "What football team in England is known as the Red Devils?: ": "a",
@@ -55,3 +57,6 @@ answers = [["(a)Koala", "(b)Crocodile", "(c)Kangaroo", "(d)Dingo"],
     ["(a)Elephant", "(b)Blue Whale", "(c)Killer Whale", "(d)Giraffe"]]
 
 quiz_game()
+
+while play_again():
+    quiz_game()
