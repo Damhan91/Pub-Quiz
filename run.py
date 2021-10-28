@@ -5,27 +5,26 @@ print("For every correct answer you get 1 mark and for each wrong answer you get
 def quiz_game():
 
     questions_num = 0
-    
+
     for key in questions:
         print("...................")
         print(key)
         for x in answers[questions_num]:
             print(x)
-
         guess = input("Enter a, b, c or d: ")
         questions_num += 1
 
-def check_answer():
-    score = 0
-    if guess == questions(value):
-        print("Correct")
-        score = score +1
+
+def validate_input(guess):
+
+    if values == guess:
+        return True
     else:
-        print("Incorrect")
+        print("Please enter a, b, c or d")
 
 def play_again():
     
-    ending = input("Would you like to play again, Yes or NO: ")
+    ending = input("Would you like to play again, Yes or No: ")
     if ending == "Yes":
         return True
     else:
