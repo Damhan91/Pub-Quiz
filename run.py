@@ -15,12 +15,15 @@ def quiz_game():
         questions_num += 1
 
 
-def validate_input(guess):
+def validate_input():
 
     if values == guess:
         return True
     else:
         print("Please enter a, b, c or d")
+
+def score():
+    pass
 
 def play_again():
     
