@@ -12,6 +12,7 @@ questions = [
 ]
 
 comp_answer = ["c", "a", "d", "c", "c", "b", "c", "d", "a", "b"]
+input_answers = {"a", "b", "c", "d"}
 
 answers = [
     ["(a)Koala", "(b)Crocodile", "(c)Kangaroo", "(d)Dingo"],
@@ -39,7 +40,7 @@ def quiz_game():
         for x in answers[questions_num]:
             print(x)
         guess = input("Enter a, b, c or d: ")
-        if validate_input(guess, questions_num):
+        if score(guess, questions_num):
             print("Your answer is correct")
             questions_num += 1
         else:
@@ -47,15 +48,14 @@ def quiz_game():
             questions_num += 1
 
 
-def validate_input(guess, position):
+def validate_input():
+    pass
 
+def score(guess, position):
     if comp_answer[position] == guess:
         return True
     else:
         return False
-
-def score():
-    pass
 
 
 
