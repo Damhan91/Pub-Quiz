@@ -40,15 +40,17 @@ def quiz_game():
         for x in answers[questions_num]:
             print(x)        
         guess = input("Enter a, b, c or d: ")
-        if not re.match("^[a-d]*$", guess):
-            print("Error! Only letters a-d allowed!")
-
         if score(guess, questions_num):
             print("Your answer is correct")
             questions_num += 1
         else:
             print("your answer is wrong")
             questions_num += 1
+
+        if not re.match("^[a-d]*$", guess):
+            print("Error! Only letters a-d allowed!")
+
+
 
 
 def validate_input():
