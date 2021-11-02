@@ -36,7 +36,6 @@ def quiz_game():
     for key in questions:
         print("...................")
         print(key)
-        
         for x in answers[questions_num]:
             print(x)        
         guess = input("Enter a, b, c or d: ")
@@ -51,8 +50,6 @@ def quiz_game():
             print("Error! Only letters a-d allowed!")
 
 
-
-
 def validate_input():
     pass
 def score(guess, position):
@@ -61,9 +58,6 @@ def score(guess, position):
     else:
         return False
 
-
-
-#quiz_game()
 
 while True:
     name = input("What's your name?: ")
