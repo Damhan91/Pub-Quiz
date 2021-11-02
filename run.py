@@ -1,5 +1,3 @@
-import re
-
 questions = [
     "What is the national animal of Australia?: ",
     "What football team in England is known as the Red Devils?: ",
@@ -39,15 +37,18 @@ def quiz_game():
         for x in answers[questions_num]:
             print(x)        
         guess = input("Enter a, b, c or d: ")
+        if guess.lower() not in ("a", "b", "c", "d"):
+            print("Not a valid answer, please enter a,b,c or d")
+        else:
+            break    
         if score(guess, questions_num):
             print("Your answer is correct")
             questions_num += 1
         else:
             print("your answer is wrong")
             questions_num += 1
-
-        if not re.match("^[a-d]*$", guess):
-            print("Error! Only letters a-d allowed!")
+        
+        
 
 
 def validate_input():
