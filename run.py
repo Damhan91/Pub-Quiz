@@ -29,6 +29,7 @@ answers = [
 
 def quiz_game():
 
+    points = 0
     questions_num = 0
 
     for key in questions:
@@ -45,25 +46,22 @@ def quiz_game():
 def validate_input(guess, questions_num):
     if guess != comp_answer:
         print("Not a valid answer, please enter a,b,c or d")
-        guess = input("Enter a, b, c or d: ")
-        questions_num += 1
-    else:
-        print("Your answer is correct")
-
-    if score(guess, questions_num):
-        print("Your answer is correct")
-        questions_num += 1
-    else:
-        print("your answer is wrong")
-        questions_num += 1 
+        guess = input("Enter a, b, c or d: ")        
+        if answer(guess, questions_num):
+            print("Your answer is correct")            
+        else:
+            print("your answer is wrong")
+            
 
 
-def score(guess, position):
+def answer(guess, position):
     if comp_answer[position] == guess:
         return True
     else:
         return False
 
+def points():
+    pass
 
 while True:
     name = input("What's your name?: ")
