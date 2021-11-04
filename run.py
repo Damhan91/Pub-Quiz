@@ -42,7 +42,7 @@ def quiz_game():
             print("Your answer is correct")   
             questions_num += 1     
         else:
-            print("your answer is wrong")            
+            print("Your answer is wrong")            
             questions_num += 1
 
         validate_input(guess)
