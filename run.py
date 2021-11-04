@@ -50,7 +50,7 @@ def quiz_game():
 
 def validate_input(guess, questions_num):
     while True:
-        if guess.lower() not in ('a', 'b', 'c', 'd'):
+        if guess not in ('a', 'b', 'c', 'd'):
             print("Not a valid answer, please enter a,b,c or d")
             questions_num += 1 
         break
