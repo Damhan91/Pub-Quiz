@@ -36,21 +36,24 @@ def quiz_game():
         print("...................")
         print(key)
         for x in answers[questions_num]:
-            print(x) 
-        questions_num += 1        
+            print(x)               
         guess = input("Enter a, b, c or d: ")
+        if answer(guess, questions_num):
+            print("Your answer is correct")   
+            questions_num += 1     
+        else:
+            print("your answer is wrong")            
+            questions_num += 1
 
         validate_input(guess, questions_num)
 
 
 def validate_input(guess, questions_num):
-    if guess != comp_answer:
-        print("Not a valid answer, please enter a,b,c or d")
-        guess = input("Enter a, b, c or d: ")        
-        if answer(guess, questions_num):
-            print("Your answer is correct")            
-        else:
-            print("your answer is wrong")
+    while True:
+        if guess.lower() not in ('a', 'b', 'c', 'd'):
+            print("Not a valid answer, please enter a,b,c or d")
+            questions_num += 1 
+        break
             
 
 
