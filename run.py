@@ -70,6 +70,7 @@ while True:
     name = input("What's your name?: ")
     print("...................")
 
+
     if not name.isalpha():
         print("Invalid Name, Only letters are allowed!")    
     else:
@@ -77,3 +78,4 @@ while True:
         print("...................")
         print("For every correct answer you get 1 mark and for each wrong answer you get 0 marks")
         quiz_game()
+
