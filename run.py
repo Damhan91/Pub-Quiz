@@ -45,14 +45,14 @@ def quiz_game():
             print("Your answer is wrong")            
             questions_num += 1
 
-        validate_input(guess)
+            validate_input(guess)
 
 
 def validate_input(guess):
     if guess not in ('a', 'b', 'c', 'd'):
-        return "Not a valid answer, please enter a,b,c or d"
+        print("Not a valid answer, please enter a,b,c or d") 
     else:
-        return True
+        return False
         
 
 def answer(guess, position):
