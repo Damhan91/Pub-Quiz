@@ -69,3 +69,29 @@ def quiz_validation(guess, position, data):
         return True
     else:
         return False
+        
+
+# play game
+print("Welcome to our quiz game")
+name = input("Please enter your name: ")
+print("**************************")
+print("Great to have you with us " + name)
+print("**************************")
+
+points = 0  # starts with 0 points
+position = 0
+for i in range(len(data_dict)):
+    # presernt data
+    quiz(i, data_dict)
+
+    user_guess = input("Enter your guess: ")
+
+    if quiz_validation(user_guess, i, data_dict):
+        print("Well done, that's the correct one")
+        print("**************************")
+        points += 1
+    else:
+        print("Sorry but your guess is incorrect")
+        print("**************************")
+
+print("Total points you got is " + str(points))
