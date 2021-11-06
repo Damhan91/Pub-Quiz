@@ -53,7 +53,8 @@ data_dict = {
 
 # validation
 def is_valid_guess(guess):
-    pass
+    if guess not in ("a", "b", "c", "d"):
+        print("invalid answer, please choose a,b,c or d")
 
 def is_valid_position(position):
     return True
