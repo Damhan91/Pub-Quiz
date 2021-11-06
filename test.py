@@ -92,7 +92,7 @@ def quiz_game():
 
     print("...................")
 
-    question10 = print("Which animal is the largest in the world?)
+    question10 = print("Which animal is the largest in the world?")
     guess = input("(a)Elephant,(b)Blue Whale,(c)Killer Whale,(d)Giraffe: ")
     if guess == "b" or guess == "Blue Whale":
         score = score + 1
@@ -103,11 +103,11 @@ def quiz_game():
 
     if score >= 8:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
-    elif score >= 5 and < 8:
+    elif score >= 5 and <8:
     print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
     else score <5:
     print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
-    
+
 
 
 def play_again():
