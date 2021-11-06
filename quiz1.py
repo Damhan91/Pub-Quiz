@@ -69,7 +69,7 @@ def quiz_validation(guess, position, data):
         return True
     else:
         return False
-        
+
 
 # play game
 print("Welcome to our quiz game")
