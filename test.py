@@ -51,11 +51,9 @@ def quiz_game():
         print("You are incorrect, your scored 0")
 
 
-
-
     if score >= 0:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
-    
+
 
 
 def play_again():
