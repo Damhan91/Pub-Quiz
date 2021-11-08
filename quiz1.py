@@ -51,10 +51,12 @@ data_dict = {
   },
 }
 
+
 # validation
 def is_valid_guess(guess):
     if guess not in ("a", "b", "c", "d"):
         print("invalid answer, please choose a,b,c or d")
+
 
 def is_valid_position(position):
     return True
@@ -64,6 +66,7 @@ def is_valid_position(position):
 def quiz(position, data):
     print(data[position]["question"])
     print(*data[position]["options"], sep = "\n")
+    
   
 def quiz_validation(guess, position, data):
     if guess == data[position]["correct_answer"]:
@@ -86,7 +89,7 @@ for i in range(len(data_dict)):
     quiz(i, data_dict)
 
     user_guess = input("Enter your guess: ")
-
+    
     if quiz_validation(user_guess, i, data_dict):
         print("Well done, that's the correct one")
         print("**************************")

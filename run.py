@@ -28,23 +28,32 @@ answers = [
 
 
 def quiz_game():
-    score = 0
+
     questions_num = 0
+    score = 0
 
     for key in questions:
         print("...................")
         print(key)
+        
         for x in answers[questions_num]:
-            print(x) 
-        guess = input('Enter a, b, c or d: ')            
+            print(x)
+        guess = input("Enter a, b, c or d: ")
         if validate_input(guess, questions_num):
             print("Your answer is correct")
             questions_num += 1
-        elif
-        print("your answer is wrong")
-        questions_num += 1
+            score += 1
         else:
-        print("Invalid Answer")
+            print("your answer is wrong")
+            questions_num += 1
+
+
+    if score >= 8:
+        print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
+    if score >= 5 <= 8:
+        print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
+    if score < 5:
+        print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
 
 
 def validate_input(guess, position):
@@ -53,14 +62,21 @@ def validate_input(guess, position):
         return True
     else:
         print("Please enter a, b, c or d")
-def points():
-    pass
+
+
+def play_again():
+    
+    ending = input("Would you like to play again, Yes or No: ")
+    if ending == "Yes":
+        return play_again()
+    else:
+        print("Thank you for playing!")
+        quit()
 
 
 while True:
     name = input("What's your name?: ")
     print("...................")
-
 
     if not name.isalpha():
         print("Invalid Name, Only letters are allowed!")    
@@ -69,4 +85,6 @@ while True:
         print("...................")
         print("For every correct answer you get 1 mark and for each wrong answer you get 0 marks")
         quiz_game()
+        play_again()
+
 

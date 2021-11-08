@@ -101,23 +101,22 @@ def quiz_game():
         print("You are incorrect, your scored 0")
 
 
-if score >= 8:
-    print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
-elif score >= 5 and <8:
-print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
-else score < 5:
-print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
-
+    if score >= 8:
+        print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
+    if score >= 5 <= 8:
+        print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
+    if score < 5:
+        print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
 
 
 def play_again():
     ending = input("Would you like to play again, Yes or No: ")
     if ending == "Yes":
-        return True
+        return quiz_game()
     else:
         print("Thank you for playing!")
         quit()
+
         
-    
 quiz_game()
 play_again()
