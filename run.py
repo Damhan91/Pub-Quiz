@@ -35,18 +35,22 @@ def quiz_game():
     for key in questions:
         print("...................")
         print(key)
-        
         for x in answers[questions_num]:
             print(x)
-        guess = input("Enter a, b, c or d: ")
-        if answer_input(guess, questions_num):
-            print("Your answer is correct")
-            questions_num += 1
-            score += 1
-        else:
-            print("Your answer is wrong")
-            questions_num += 1
-
+        
+        guess = " "
+        while guess not in ["a", "b", "c", "d"]:
+            guess = input('Enter a, b, c or d: ') 
+            if answer_input(guess, questions_num):                  
+                print('Your answer is correct')
+                questions_num += 1
+                score += 1 
+            elif answer_input(guess, questions_num):                    
+                print('Your answer is wrong')
+                questions_num += 1
+            else:
+                print('Invalid input')
+                questions_num += 1
     
     if score >= 8:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
@@ -68,7 +72,7 @@ def play_again():
     
     ending = input("Would you like to play again, yes or no: ")
     if ending == "yes":
-        return play_again()
+        return quiz_game()
     else:
         print("Thank you for playing!")
         quit()
