@@ -66,8 +66,8 @@ def validate_input(guess, position):
 
 def play_again():
     
-    ending = input("Would you like to play again, Yes or No: ")
-    if ending == "Yes":
+    ending = input("Would you like to play again, yes or no: ")
+    if ending == "yes":
         return play_again()
     else:
         print("Thank you for playing!")
