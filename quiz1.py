@@ -89,7 +89,7 @@ for i in range(len(data_dict)):
     quiz(i, data_dict)
 
     user_guess = input("Enter your guess: ")
-    
+    is_valid_guess(guess)
     if quiz_validation(user_guess, i, data_dict):
         print("Well done, that's the correct one")
         print("**************************")
