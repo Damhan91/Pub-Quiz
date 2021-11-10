@@ -28,11 +28,6 @@ answers = [
 
 
 def quiz_game():
-
-    questions_num = 0
-    score = 0
-
-def quiz_game():
     questions_num = 0
     score = 0
 
@@ -93,6 +88,5 @@ while True:
         print("Welcome to the quiz! " + name)
         print("...................")
         print("For every correct answer you get 1 mark and for each wrong answer you get 0 marks")
-        quiz_game()        
+        quiz_game()
         play_again()
-
