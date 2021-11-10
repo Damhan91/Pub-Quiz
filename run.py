@@ -32,13 +32,19 @@ def quiz_game():
     questions_num = 0
     score = 0
 
+def quiz_game():
+    questions_num = 0
+    score = 0
+
     for key in questions:
         print("...................")
         print(key)
         for x in answers[questions_num]:
-            print(x)
-        validate_input(input)
-        guess = input('Enter a, b, c or d: ')         
+            print(x)        
+        guess = input('Enter a, b, c or d: ')  
+        suitable_answer = ['a', 'b', 'c', 'd']
+        while guess not in suitable_answer:
+            guess = input('Enter a, b, c or d: ')      
         if answer_input(guess, questions_num):                  
             print('Your answer is correct')
             questions_num += 1
@@ -46,14 +52,10 @@ def quiz_game():
         else:                    
             print('Your answer is wrong')
             questions_num += 1
+
     points(score)
 
 
-def validate_input(input):
-    if input is not ("a", "b", "c", "d"):
-        print("Invalid Answer") 
-
-       
 def points(score):
     if score >= 8:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
@@ -61,8 +63,6 @@ def points(score):
         print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
     if score < 5:
         print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
-
-
 
 
 def answer_input(guess, position):
