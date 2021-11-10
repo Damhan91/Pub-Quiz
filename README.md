@@ -1,31 +1,38 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pub Quiz
+Pub quiz is a python terminal game, which runs on Heroku
+User can test their knowledge against the 10 question and see how many they get correct at the end of the quiz
+![Responsive image](https://github.com/Damhan91/Keeping-Fish-Simple/blob/main/assets/images/Responsive.JPG)
 
-Welcome Damhan91,
+### How to Play
+Pub quiz is based on the classic game that we all know and love and can be a great way to test your general knowledge.
+This version a player is firsty asked their name, once entered they are welcomed to the game.
+The rules of the game appear as well as the first question.
+Each question appears once the previous question is answered.
+At the end of the game they are shown their total score and also an option to play the game again.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Here is a live version of my projecy [project](https://pub-quiz-python.herokuapp.com/)
+### Existing Features
 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## Testing 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Bugs
+ 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Validator Testing 
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Deployment
+ - Log in [Github](https://github.com/)
+ - Then access the Github respository for the project (https://github.com/Damhan91/Keeping-Fish-Simple)
+ - Click on settings and go down to the "Github Pages"
+ - Select "Branch: Main" from the menu. This then genertates a link for the Website
+ - Link to Keeping Fish Simple can be found [Here](https://damhan91.github.io/Keeping-Fish-Simple/)
 
------
-Happy coding!
+## Content
+ - All the imagesd were taken from Google Images
+ - All the incons that were used throughout the website were from Font Awesome
