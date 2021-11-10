@@ -39,7 +39,7 @@ def quiz_game():
         guess = input('Enter a, b, c or d: ')
         suitable_answer = ['a', 'b', 'c', 'd']
         while guess not in suitable_answer:
-            guess = input('Enter a, b, c or d: ')
+            guess = input('Enter a, b, c or d:\n')
         if answer_input(guess, questions_num):
             print('Your answer is correct')
             questions_num += 1
@@ -69,7 +69,7 @@ def answer_input(guess, position):
 
 
 def play_again():
-    ending = input("Would you like to play again, yes or no: ")
+    ending = input("Would you like to play again, yes or no:\n ")
     if ending == "yes":
         return quiz_game()
     else:
