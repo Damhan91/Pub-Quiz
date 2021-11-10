@@ -20,10 +20,10 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 
 
 ### Bugs
- 
+  - No bugs to report
 
 ### Validator Testing 
-
+- No erroes returned from PEP8online.com
 
 
 ## Deployment
