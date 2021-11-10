@@ -10,7 +10,7 @@ The rules of the game appear as well as the first question.
 Each question appears once the previous question is answered.
 At the end of the game they are shown their total score and also an option to play the game again.
 
-Here is a live version of my projecy [project](https://pub-quiz-python.herokuapp.com/)
+Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ### Existing Features
 
 
