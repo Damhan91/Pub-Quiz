@@ -12,7 +12,17 @@ At the end of the game they are shown their total score and also an option to pl
 
 Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ### Existing Features
-
+-When the user starts the Game they are asked for their name.
+picture
+-When they insert their name only using letters, they are then showen the rules of the game and presented with their first question.
+picture
+- If the user inputs and answer that is not a,b,c or d they are allowed another chance.
+- picture
+- If they input the answer whcih is correct, they are shown that their answer is correct
+- picture
+- They are also shown if their answer is wrong.
+- Depending how many points they get correct they will be shown a different ansswer, as well as the chgance to play again
+- pictures
 
 
 ## Testing 
