@@ -27,12 +27,14 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 
 
 ## Deployment
- - Log in [Github](https://github.com/)
- - Then access the Github respository for the project (https://github.com/Damhan91/Keeping-Fish-Simple)
- - Click on settings and go down to the "Github Pages"
- - Select "Branch: Main" from the menu. This then genertates a link for the Website
- - Link to Keeping Fish Simple can be found [Here](https://damhan91.github.io/Keeping-Fish-Simple/)
+ - This project is used using Heroku
+#Steps for development
+ - Fork or clone the repository
+ - Create a new Heroku app
+ - Set the buildbacks to Python and NodeJS 
+ - Link the Heroku app to the repository
+ - Click Deploy
 
 ## Content
- - All the imagesd were taken from Google Images
- - All the incons that were used throughout the website were from Font Awesome
+ - Code INstitute for the deployment and template
+
