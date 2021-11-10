@@ -28,7 +28,6 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 
 ## Deployment
  - This project is used using Heroku
-#Steps for development
  - Fork or clone the repository
  - Create a new Heroku app
  - Set the buildbacks to Python and NodeJS 
