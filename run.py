@@ -54,10 +54,10 @@ def quiz_game():
 def points(score):
     if score >= 8:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
-    if score >= 5 <= 8:
+    elif score >= 5 <= 8:
         print("Good Job, you scored" + " " + str(score) + " " + "out of 10")
-    if score < 5:
-        print("Ohhhh you might want to use google, you scored" + " " + str(score) + " " + "out of 10")
+    else:
+        print("Use google you scored" + " " + str(score) + " " + "out of 10")
 
 
 def answer_input(guess, position):
@@ -87,6 +87,6 @@ while True:
     else:
         print("Welcome to the quiz! " + name)
         print("...................")
-        print("For every correct answer you get 1 mark and for each wrong answer you get 0 marks")
+        print("For every correct answer you get 1 point and for each wrong answer you get 0 points")
         quiz_game()
         play_again()
