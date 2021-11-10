@@ -35,16 +35,16 @@ def quiz_game():
         print("...................")
         print(key)
         for x in answers[questions_num]:
-            print(x)        
-        guess = input('Enter a, b, c or d: ')  
+            print(x)
+        guess = input('Enter a, b, c or d: ')
         suitable_answer = ['a', 'b', 'c', 'd']
         while guess not in suitable_answer:
-            guess = input('Enter a, b, c or d: ')      
-        if answer_input(guess, questions_num):                  
+            guess = input('Enter a, b, c or d: ')
+        if answer_input(guess, questions_num):
             print('Your answer is correct')
             questions_num += 1
-            score += 1 
-        else:                    
+            score += 1
+        else:
             print('Your answer is wrong')
             questions_num += 1
 
@@ -69,7 +69,6 @@ def answer_input(guess, position):
 
 
 def play_again():
-    
     ending = input("Would you like to play again, yes or no: ")
     if ending == "yes":
         return quiz_game()
@@ -83,7 +82,7 @@ while True:
     print("...................")
 
     if not name.isalpha():
-        print("Invalid Name, Only letters are allowed!")    
+        print("Invalid Name, Only letters are allowed!")
     else:
         print("Welcome to the quiz! " + name)
         print("...................")
