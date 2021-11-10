@@ -1,3 +1,4 @@
+
 questions = [
     "What is the national animal of Australia?: ",
     "What football team in England is known as the Red Devils?: ",
@@ -27,6 +28,7 @@ answers = [
   ]
 
 
+#This def quiz game is the function that runs the game and valifdates the user input
 def quiz_game():
     questions_num = 0
     score = 0
@@ -51,6 +53,7 @@ def quiz_game():
     points(score)
 
 
+#This def function adds up and shows how many question the user got correct. This is shown after the last question is answered
 def points(score):
     if score >= 8:
         print("EXCELLENT!, you scored" + " " + str(score) + " " + "out of 10")
@@ -60,14 +63,16 @@ def points(score):
         print("Use google you scored" + " " + str(score) + " " + "out of 10")
 
 
+#This def function allows the correct answers to appear with the correct question.
 def answer_input(guess, position):
 
     if comp_answer[position] == guess:
         return True
     else:
         return False
+        
 
-
+#This def function gives the user to play the quix game again at the end. If the user choses yes the game runs again, if no then the game stops.
 def play_again():
     ending = input("Would you like to play again, yes or no:\n ")
     if ending == "yes":
