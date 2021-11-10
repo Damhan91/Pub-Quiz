@@ -78,7 +78,7 @@ def play_again():
 
 
 while True:
-    name = input("What's your name?: ")
+    name = input("What's your name?:\n ")
     print("...................")
 
     if not name.isalpha():
@@ -86,6 +86,7 @@ while True:
     else:
         print("Welcome to the quiz! " + name)
         print("...................")
-        print("For every correct answer you get 1 point and for each wrong answer you get 0 points")
+        print("For every correct answer you get 1 point")
+        print("For each wrong answer you get 0 points")
         quiz_game()
         play_again()
