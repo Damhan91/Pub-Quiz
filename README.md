@@ -1,7 +1,7 @@
 # Pub Quiz
 Pub quiz is a python terminal game, which runs on Heroku
 User can test their knowledge against the 10 question and see how many they get correct at the end of the quiz
-![Responsive image]
+![Responsive image](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/responsive.JPG)
 
 ### How to Play
 Pub quiz is based on the classic game that we all know and love and can be a great way to test your general knowledge.
