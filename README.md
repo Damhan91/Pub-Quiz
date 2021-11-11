@@ -29,7 +29,7 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 - 
 ![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
 ![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/score.JPG)
-![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
+![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending%201.JPG)
 
 ## Testing 
 
