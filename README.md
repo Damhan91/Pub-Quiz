@@ -28,7 +28,7 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 - Depending how many points they get correct they will be shown a different ansswer, as well as the chance to play again
 - 
 ![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
-![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
+![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/score.JPG)
 ![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
 
 ## Testing 
