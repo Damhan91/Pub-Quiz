@@ -34,7 +34,10 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending%201.JPG)
 
 ## Testing 
-
+I have manually tested thios project for the following
+- I have tested teh user name input to only allow letters inputs. Numbers and blanks are considered invalid.
+- I have tested the validation for the answers. Only answers, a,b,c or d are allowed and counted for.
+- Have tested in the local terminal and in the Heroku terminal.
 
 
 ### Bugs
@@ -53,5 +56,5 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
  - Click Deploy
 
 ## Content
- - Code INstitute for the deployment and template
+ - Code Institute for the deployment and template
 
