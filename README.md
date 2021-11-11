@@ -25,9 +25,11 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 - They are also shown if their answer is wrong.
 
 ![wrong Input](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/wrong%20answer.JPG)
-- Depending how many points they get correct they will be shown a different ansswer, as well as the chgance to play again
-- pictures
-
+- Depending how many points they get correct they will be shown a different ansswer, as well as the chance to play again
+- 
+![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
+![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
+![ending](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/ending.JPG)
 
 ## Testing 
 
