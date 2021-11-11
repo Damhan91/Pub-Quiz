@@ -19,8 +19,8 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ![Intro image](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/quiz%20intro%202.JPG)
 - If the user inputs and answer that is not a,b,c or d they are allowed another chance.
 - ![Invalid Input](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/invalid%20input.JPG)
-- If they input the answer whcih is correct, they are shown that their answer is correct
-- picture
+- If they input the answer which is correct, they are shown that their answer is correct
+- ![correct Input](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/correct%20answer.JPG)
 - They are also shown if their answer is wrong.
 - Depending how many points they get correct they will be shown a different ansswer, as well as the chgance to play again
 - pictures
