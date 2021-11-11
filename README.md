@@ -13,6 +13,7 @@ At the end of the game they are shown their total score and also an option to pl
 Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ### Existing Features
 - When the user starts the Game they are asked for their name.
+
 ![Intro image](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/quiz%20intro.JPG)
 
 - When they insert their name only using letters, they are then showen the rules of the game and presented with their first question.
