@@ -16,7 +16,7 @@ Here is a live version of my [project](https://pub-quiz-python.herokuapp.com/)
 ![Intro image](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/quiz%20intro.JPG)
 
 - When they insert their name only using letters, they are then showen the rules of the game and presented with their first question.
-picture
+![Intro image](https://github.com/Damhan91/Pub-Quiz/blob/main/assets/images/quiz%20intro%202.JPG)
 - If the user inputs and answer that is not a,b,c or d they are allowed another chance.
 - picture
 - If they input the answer whcih is correct, they are shown that their answer is correct
