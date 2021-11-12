@@ -5,7 +5,7 @@ User can test their knowledge against the 10 question and see how many they get 
 
 ### How to Play
 Pub quiz is based on the classic game that we all know and love and can be a great way to test your general knowledge.
-This version a player is firsty asked their name, once entered they are welcomed to the game.
+This version a player is first asked their name, once entered they are welcomed to the game.
 The rules of the game appear as well as the first question.
 Each question appears once the previous question is answered.
 At the end of the game they are shown their total score and also an option to play the game again.
